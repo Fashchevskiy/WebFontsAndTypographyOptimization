@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Веб-шрифти та типографіка</title>
+    <!-- Підключення Google Fonts з оптимізацією display -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Локальне підключення шрифту */
+        @font-face {
+            font-family: 'LocalFont';
+            src: url('fonts/LocalFont.woff2') format('woff2'),
+                 url('fonts/LocalFont.woff') format('woff');
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* fallback */
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+            background: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            font-family: 'LocalFont', Georgia, serif; /* локальний шрифт з fallback */
+            margin-bottom: 0.5em;
+            color: #222;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 1em;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #ccc;
+            margin: 1.5em 0;
+            padding-left: 1em;
+            background: #f0f0f0;
+        }
+
+        ul {
+            margin: 1em 0;
+            padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        mark {
+            background-color: #ffe564;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок рівня 1</h1>
+    <h2>Заголовок рівня 2</h2>
+    <h3>Заголовок рівня 3</h3>
+
+    <p>Це основний текст сторінки. Він використовує шрифт Roboto з Google Fonts. Завдяки <mark>оптимізації завантаження</mark> сторінка швидко відображається.</p>
+
+    <blockquote>
+        Це цитата, яка підкреслює важливу інформацію та додає стилю контенту.
+    </blockquote>
+
+    <p>Приклад списку:</p>
+    <ul>
+        <li>Перший пункт списку</li>
+        <li>Другий пункт списку</li>
+        <li>Третій пункт списку</li>
+    </ul>
+
+    <p>Виділений <mark>текст</mark> для акценту уваги.</p>
+</body>
+</html>
